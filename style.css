@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', Arial, sans-serif;
+  background: linear-gradient(#87ceeb, #ffffff);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* CLOUDS */
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.cloud:before,
+.cloud:after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.cloud1 {
+  width: 120px;
+  height: 60px;
+  top: 60px;
+  left: -150px;
+  animation: moveCloud 60s linear infinite;
+}
+.cloud1:before {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: 20px;
+}
+.cloud1:after {
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 50px;
+}
+
+.cloud2 {
+  width: 180px;
+  height: 80px;
+  top: 150px;
+  left: -200px;
+  animation: moveCloud 90s linear infinite;
+}
+.cloud2:before {
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 30px;
+}
+.cloud2:after {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 80px;
+}
+
+@keyframes moveCloud {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(120vw);
+  }
+}
+
+/* MAIN CONTENT */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 800px;
+  margin: auto;
+  margin-top: 120px;
+  background: #000080;
+  border: 5px ridge cyan;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: yellow;
+  text-shadow: 2px 2px red;
+}
+
+.nav {
+  background: hotpink;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav a {
+  color: lime;
+  margin: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background: yellow;
+  color: black;
+}
+
+.page {
+  display: none;
+}
+
+.blink {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+button {
+  background: yellow;
+  border: 3px outset red;
+  font-family: 'Comic Sans MS';
+  font-size: 16px;
+}
+
+/* FAKE COUNTER */
+.counter {
+  font-size: 20px;
+  background: black;
+  color: lime;
+  padding: 5px;
+  display: inline-block;
+}

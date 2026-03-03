@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>pepeum18s blog</title>
+</head>
+
+<body>
+
+<!-- CLOUDS -->
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<div class="container">
+  <h1>welcome! i post my stuff here.</h1>
+
+  <div class="nav">
+    <a onclick="showPage('home')">HOME</a>
+    <a onclick="showPage('about')">ABOUT</a>
+    <a onclick="showPage('links')">COOL LINKS</a>
+    <a onclick="showPage('guestbook')">GUESTBOOK</a>
+  </div>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page">
+    <h2>HOME</h2>
+    <p class="blink">this website was made in 1995</p>
+    <p>this is my blog, i get my stuff here.</p>
+    <p>You are visitor number:</p>
+    <div class="counter" id="counterNumber">0</div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="about" class="page">
+    <h2>ABOUT ME</h2>
+    <p>
+      hello! my internet name is Pepeum18. my dream is to make games, so what
+      was the purpose of the internet?
+    </p>
+    <p>this is my blog, it is where i post stuff.</p>
+  </div>
+
+  <!-- LINKS PAGE -->
+  <div id="links" class="page">
+    <h2>COOL LINKS</h2>
+    <p>here are some links!</p>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">thingies</a></li>
+      <li><a href="#">story</a></li>
+    </ul>
+  </div>
+
+  <!-- GUESTBOOK PAGE -->
+  <div id="guestbook" class="page">
+    <h2>GUESTBOOK</h2>
+    <p>Sign my guestbook!!! (not actually saved lol)</p>
+    <input type="text" placeholder="Your Name" />
+    <br /><br />
+    <textarea placeholder="Your Message"></textarea>
+    <br /><br />
+    <button onclick="alert('THANKS FOR SIGNING MY GUESTBOOK!!!')">
+      SIGN!!!
+    </button>
+  </div>
+</div>
+
+</body>
+</html>

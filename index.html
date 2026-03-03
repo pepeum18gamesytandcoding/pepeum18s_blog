@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>pepeum18s blog</title>
+  <link rel="icon" type="image/x-icon" href="https://pepeum18gamesytandcoding.github.io/pepeum18s_blog/icon_modified.gif">
+  <!--i need to commit changes pls -->
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to JavaScript -->
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+<!-- CLOUDS -->
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<div class="container">
+  <h1>welcome! i post my stuff here.</h1>
+
+  <div class="nav">
+    <a href="#" onclick="showPage('home')">HOME</a>
+    <a href="#" onclick="showPage('about')">ABOUT</a>
+    <a href="#" onclick="showPage('links')">COOL LINKS</a>
+    <a href="#" onclick="showPage('guestbook')">GUESTBOOK</a>
+  </div>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page">
+    <h2>HOME</h2>
+    <p class="blink">this website wasn't made in 1995</p>
+    <p>this is my blog, i get my stuff here.</p>
+    <p>You are visitor number:</p>
+    <div class="counter" id="counterNumber">0</div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="about" class="page">
+    <h2>ABOUT ME</h2>
+    <p>
+      hello! my nickname is Pepeum18. my dream is to make games, so what
+      was the purpose of the internet?
+    </p>
+    <p>also this is my blog, it is where i share stuff about myself and other stuff.</p>
+  <h2>DEVELOPMENT</h2>
+    <p>
+      first, i was fascinated with retro websites, especially their design, then i used something that is a secret to create this, A RETRO WEBSITE!
+    </p>
+    <p>also this is my blog, it is where i share stuff about myself and other stuff.</p>
+  </div>
+
+  <!-- LINKS PAGE -->
+  <div id="links" class="page">
+    <h2>COOL LINKS</h2>
+    <p>here are some links!</p>
+    <ul>
+      <a href="https://links.net/re/intro.html">Justin's links from the underground</a>
+    </ul>
+  </div>
+
+  <!-- GUESTBOOK PAGE -->
+  <div id="guestbook" class="page">
+    <h2>GUESTBOOK</h2>
+    <p>sign my guestbook!!! (not actually posted lol)</p>
+    <input type="text" placeholder="Your Name" />
+    <br /><br />
+    <textarea placeholder="Your Message"></textarea>
+    <br /><br />
+    <button onclick="alert('your guestbook was not saved, just post it somewhere else')">
+      SIGN!!!
+    </button>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,2 +1,2 @@
-# pepeum18s_blog
+# pepeum18's blog
 i love my 90s blog
